@@ -1,3 +1,4 @@
+// Task 1
 class Character {
 
     // properties 
@@ -14,7 +15,7 @@ class Character {
     }
 
     sayPhrase(phraseNum){
-        if (phraseNum == "phrase1"){
+        if (phraseNum == 1){
             console.log(this.phrase1);
         } else {
             console.log(this.phrase2);
@@ -28,9 +29,9 @@ let character1 = new Character("ranboo", "someone moved my m&ms and now i'm goin
 let character2 = new Character("tubbo", "you just got corrected by a dyslexic person", "imma bout to hit spit spakle someone");
 
 // Task 3
-character2.sayPhrase("phrase1");
+character2.sayPhrase(1);
 character1.levelUp(2);
-character1.sayPhrase("phrase2");
+character1.sayPhrase(2);
 
 // console log to make sure class works
 console.log(character1);
