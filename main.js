@@ -1,4 +1,3 @@
-// Task 1
 class Character {
 
     // properties 
@@ -10,16 +9,17 @@ class Character {
     }
 
     // methods 
-    levelUp() {
-        this.level = 2;
+    levelUp(levelNum) {
+        this.level = levelNum;
     }
 
-    sayPhrase1(){
-        console.log(this.phrase1);
-    }
-
-    sayPhrase2(){
-        console.log(this.phrase2);
+    sayPhrase(phraseNum){
+        if (phraseNum == "phrase1"){
+            console.log(this.phrase1);
+        } else {
+            console.log(this.phrase2);
+        }
+        
     }
 }
 
@@ -28,9 +28,9 @@ let character1 = new Character("ranboo", "someone moved my m&ms and now i'm goin
 let character2 = new Character("tubbo", "you just got corrected by a dyslexic person", "imma bout to hit spit spakle someone");
 
 // Task 3
-character2.sayPhrase1();
-character1.levelUp();
-character1.sayPhrase2();
+character2.sayPhrase("phrase1");
+character1.levelUp(2);
+character1.sayPhrase("phrase2");
 
 // console log to make sure class works
 console.log(character1);
